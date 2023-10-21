@@ -1,0 +1,40 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "📱 appo",
+            "program": "appo/lib/main.dart",
+            "request": "launch",
+            "type": "dart",
+            "toolArgs": [
+                "--dart-define",
+                "HOST=$(ipconfig getifaddr en0)",
+            ]
+        },
+        {
+            "name": "🌐 appo",
+            "program": "appo/lib/main.dart",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "-d",
+                "chrome",
+                "--web-port",
+                "8889",
+            ],
+        },
+        {
+            "name": "🌐 appo (release)",
+            "program": "appo/lib/main.dart",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "-d",
+                "chrome",
+                "--web-port",
+                "8889",
+                "--release",
+            ],
+        },
+    ]
+}
