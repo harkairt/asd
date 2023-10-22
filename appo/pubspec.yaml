@@ -21,6 +21,8 @@ dependencies:
       url: https://github.com/harkairt/guarded_go_router
       ref: 848542319f522fe007e38cccd8b1a9c243ca9fe9
   hooks_riverpod: ^2.4.4
+  l10n:
+    path: ../packages/l10n
   plugger: ^0.0.1
   riverpod: ^2.4.4
   riverpod_annotation: ^2.2.1

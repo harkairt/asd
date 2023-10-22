@@ -1,6 +1,27 @@
 name: asd_workspace
 
 packages:
+  - packages/l10n/packages/l10n
+  - packages/l10n/packages/l10n
+  - packages/l10n/packages/l10n
+  - packages/l10n/packages/l10n
+  - packages/l10n/packages/l10n
+  - packages/l10n/packages/l10n
+  - packages/l10n/packages/l10n
+  - packages/l10n/packages/l10n
+  - packages/l10n/packages/l10n
+  - packages/l10n/packages/l10n
+  - packages/l10n/packages/l10n
+  - packages/l10n/packages/l10n
+  - packages/l10n/packages/l10n
+  - packages/l10n
+  - appo/packages/l10n
+  - appo/packages/l10n
+  - appo/packages/l10n
+  - appo/packages/l10n
+  - appo/packages/l10n
+  - packages/l10n
+  - packages/localizely
   - appo
 
 scripts:
