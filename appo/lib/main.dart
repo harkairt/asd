@@ -2,6 +2,7 @@ import 'package:appo/presentation/routing/router_provider.dart';
 import 'package:appo/presentation/routing/router_plug.dart';
 import 'package:appo/toolchain/error_tracking/error_tracking_plug.dart';
 import 'package:appo/toolchain/error_tracking/sentry_plug.dart';
+import 'package:appo/toolchain/l10n/localizely_plug.dart';
 import 'package:appo/toolchain/plugs/riverpod_plug.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
@@ -20,6 +21,7 @@ void main() {
         },
       ),
       SentryPlug(dsn: 'https://697d64dbdae4493c8a0254a3b469be53@o4505358017101824.ingest.sentry.io/4505358018215936'),
+      LoclaizelyPlug(),
       RouterPlug(),
     ],
   );

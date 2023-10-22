@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:guarded_go_router/guarded_go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:l10n/generated/l10n.dart';
 import 'package:plugger/plugger.dart';
 
 class R {
@@ -49,9 +50,13 @@ final routerProvider = Provider<GuardedGoRouter>(
           R.home(
             followUp: [AuthenticationGuard],
             pageBuilder: trans(
-              (_) => const PlaceholderPage(
+              (_) => PlaceholderPage(
                 title: 'Dashboard',
-                body: Text('Hey 👋'),
+                body: Builder(
+                  builder: (context) {
+                    return Text('Hey 👋 ${S.of(context).W_submit}');
+                  },
+                ),
               ),
             ),
           ),
